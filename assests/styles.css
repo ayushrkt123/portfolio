@@ -1,0 +1,22 @@
+/* .nav-icons {
+  padding: 5%;
+} */
+
+.navbar {
+  background-color: brown;
+  width: 100%;
+  /* background-color: #555; */
+  overflow: auto;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+.active {
+  background-color: #04aa6d;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
