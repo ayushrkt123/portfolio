@@ -18,7 +18,7 @@ let currentText = "",
     wordIterator++;
     characterIterator = 0;
   }
-  setTimeout(type, 300);
+  setTimeout(type, 250);
 })();
 
 // function detyped() {}
