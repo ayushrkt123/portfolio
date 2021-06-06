@@ -18,8 +18,4 @@ let currentText = "",
     characterIterator = 0;
   }
   setTimeout(type, 400);
-  //   for(int i = 0; i < currentText.length; i++)
-  //   {
-  //         typed.textContent = currentText[i];
-  //   }
 })();
