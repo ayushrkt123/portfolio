@@ -83,12 +83,12 @@ h6 {
 
 .typed::after {
   content: "";
-  /* position: absolute; */
-  /* width: 1px;
-  height: 5%;
-  border: 1px solid #fff;
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  border: 1px solid black;
   right: -5px;
-  animation: blink 0.5s infinite ease; */
+  animation: blink 0.5s infinite ease;
 }
 
 @keyframes blink {
