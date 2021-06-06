@@ -52,7 +52,7 @@ h6 {
     url(https://bootstrapmade.com/demo/templates/MyResume/assets/img/hero-bg.jpg);
   background-size: cover;
   padding: 15rem 5rem;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 #home.container {
   display: flex;
