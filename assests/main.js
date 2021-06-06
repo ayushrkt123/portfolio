@@ -17,5 +17,5 @@ let currentText = "",
     wordIterator++;
     characterIterator = 0;
   }
-  setTimeout(type, 200);
+  setTimeout(type, 300);
 })();
