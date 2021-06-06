@@ -40,11 +40,11 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
 #home {
-  background: url(https://bootstrapmade.com/demo/templates/MyResume/assets/img/hero-bg.jpg);
-  background-size: cover;
-  padding: 15rem 5rem;
+  display: block;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+    url(https://bootstrapmade.com/demo/templates/MyResume/assets/img/hero-bg.jpg);
 }
 #home h1 {
   margin: 0;
