@@ -24,6 +24,10 @@
 body {
   padding: 0;
   margin: 0;
+  color: #0d0f11;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav box-icon {
@@ -64,17 +68,15 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   /* text-align: center; */
-  color: #0d0f11;
 }
 
 #home p {
   font-size: 26px;
   margin: 15px 0 0 0;
-  color: #0d0f11;
   font-family: "Poppins", sans-serif;
 }
 
-#hero p span {
+#home p span {
   color: #0563bb;
   letter-spacing: 1px;
 }
@@ -98,7 +100,7 @@ h6 {
 
 #home .social-links a {
   font-size: 24px;
-  color: #45505b;
+  color: #0d0f11;
   display: inline-block;
   line-height: 1;
   margin-right: 20px;
@@ -125,6 +127,69 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#about h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer {
+  background: #f7f8f9;
+  padding: 5% 20%;
+  text-align: center;
+  color: #45505b;
+  font-size: 14px;
+}
+
+footer h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+footer p {
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+footer .social-links a {
+  font-size: 18px;
+  height: 36px;
+  width: 36px;
+  background: #0563bb;
+  color: #fff;
+  border-radius: 50%;
+  padding: 8px 0;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  margin: 4px;
+}
+
+footer .social-links a:hover {
+  background: #0678e3;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .copyright {
+  margin: 0 0 5px 0;
+}
+footer .credits {
+  font-size: 13px;
+}
+
+.credits span {
+  color: red;
+}
+
 @keyframes blink {
   0% {
     opacity: 0;
