@@ -1,13 +1,25 @@
-"use strict";
-const typed = select(".typed");
-if (typed) {
-  let typed_strings = typed.getAttribute("data-typed-items");
-  typed_strings = typed_strings.split(",");
-  new Typed(".typed", {
-    strings: typed_strings,
-    loop: true,
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 2000,
-  });
-}
+// "use strict";
+const text = ["Thinker", "Developer"];
+const typed = document.getElementsByClassName("typed")[0];
+let characterIterator = 0,
+  wordIterator = 0;
+
+let currentText = "",
+  currLetter = "";
+
+(function type() {
+  if (wordIterator === text.length) wordIterator = 0;
+  currentText = text[wordIterator];
+
+  currLetter = currentText.slice(0, ++characterIterator);
+  typed.textContent = currLetter;
+  if (currLetter.length === currentText.length) {
+    wordIterator++;
+    characterIterator = 0;
+  }
+  setTimeout(type, 400);
+  //   for(int i = 0; i < currentText.length; i++)
+  //   {
+  //         typed.textContent = currentText[i];
+  //   }
+})();

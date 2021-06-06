@@ -43,9 +43,18 @@ h6 {
 #home {
   display: block;
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+  background: linear-gradient(
+      rgba(255, 255, 2555, 0.5),
+      rgba(255, 255, 2555, 0.5)
+    ),
     url(https://bootstrapmade.com/demo/templates/MyResume/assets/img/hero-bg.jpg);
+  background-size: cover;
+  padding: 15rem 5rem;
 }
+#home.container {
+  display: flex;
+}
+
 #home h1 {
   margin: 0;
   font-size: 64px;
@@ -65,4 +74,28 @@ h6 {
 #hero p span {
   color: #0563bb;
   letter-spacing: 1px;
+}
+
+.typed {
+  position: relative;
+  margin-left: 10px;
+}
+
+.typed::after {
+  content: "";
+  /* position: absolute; */
+  /* width: 1px;
+  height: 5%;
+  border: 1px solid #fff;
+  right: -5px;
+  animation: blink 0.5s infinite ease; */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
