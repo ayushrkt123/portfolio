@@ -1,5 +1,6 @@
-// "use strict";
-const text = ["Thinker", "Developer", "Coder", "Problem Solver"];
+"use strict";
+
+const text = ["Developer", "Programmer", "Designer"];
 const typed = document.getElementsByClassName("typed")[0];
 let characterIterator = 0,
   wordIterator = 0;
@@ -19,3 +20,5 @@ let currentText = "",
   }
   setTimeout(type, 300);
 })();
+
+// function detyped() {}
