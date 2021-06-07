@@ -35,13 +35,10 @@ let currentText = "",
   for (let i = 0; i < navBarUL.childElementCount; i++) {
     const navBarAnchor = navBarUL.children[i].children[0];
     navBarUL.children[i].addEventListener("mouseenter", function (event) {
-      // const navBarAnchor = this.children[0];
-      const newEl = document.createElement("span");
-      newEl.textContent = navBarTexts[i];
-      navBarAnchor.appendChild(newEl);
+      navBarAnchor.lastElementChild.classList.remove("hidden");
     });
-    // navBarUL.children[i].addEventListener("mouseleave", function (event) {
-    //   navBarAnchor.removeChild(navBarAnchor.lastChild);
-    // }
+    navBarUL.children[i].addEventListener("mouseleave", function (event) {
+      navBarAnchor.lastElementChild.classList.add("hidden");
+    });
   }
 })();
