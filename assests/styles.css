@@ -116,21 +116,57 @@ h6 {
 }
 
 .bx {
-  font-family: "boxicons" !important;
+  font-family: "boxicons";
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
   line-height: 1;
   display: inline-block;
   text-transform: none;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* speak: none; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
+#about {
+  text-align: center;
+  padding-bottom: 30px;
+}
 #about h2 {
   text-transform: uppercase;
-  text-align: center;
+  /* text-align: center; */
+  font-size: 32px;
+  font-weight: bold;
+  color: #45505b;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* #about h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+#about h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+} */
+
+#about p {
+  /* margin-bottom: 0; */
+  margin: 0 5% 0;
 }
 
 footer {

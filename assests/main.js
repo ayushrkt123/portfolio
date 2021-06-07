@@ -22,3 +22,26 @@ let currentText = "",
 })();
 
 // function detyped() {}
+
+/* 
+  Add Event Listeners to NavBar Icons for Hover
+*/
+
+(function NavBarHover() {
+  const navBarTexts = ["Home", "About", "Resume"];
+  const navBarUL = document.querySelector(
+    "#navbarSupportedContent .navbar-nav"
+  );
+  for (let i = 0; i < navBarUL.childElementCount; i++) {
+    const navBarAnchor = navBarUL.children[i].children[0];
+    navBarUL.children[i].addEventListener("mouseenter", function (event) {
+      // const navBarAnchor = this.children[0];
+      const newEl = document.createElement("span");
+      newEl.textContent = navBarTexts[i];
+      navBarAnchor.appendChild(newEl);
+    });
+    // navBarUL.children[i].addEventListener("mouseleave", function (event) {
+    //   navBarAnchor.removeChild(navBarAnchor.lastChild);
+    // }
+  }
+})();
